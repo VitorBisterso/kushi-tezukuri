@@ -3,12 +3,15 @@
 
 /* TODO: Remover restrições do eslint acima */
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
   faShoppingCart,
   faWindowClose,
 } from '@fortawesome/free-solid-svg-icons'
+
+import { getPathToRoute } from '../../routes'
 
 import logo from '../../assets/img/logo.png'
 import './styles.css'
@@ -25,7 +28,9 @@ const Menu = () => (
       <FontAwesomeIcon icon={faBars} aria-hidden="true" />
     </a>
 
-    <img className="logo" src={logo} alt="logo" />
+    <Link to={getPathToRoute('home')}>
+      <img className="logo" src={logo} alt="logo" />
+    </Link>
 
     <nav id="main-menu" className="main-menu" aria-label="Main menu">
       <a

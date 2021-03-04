@@ -15,15 +15,11 @@
   align-items: center;
 }
 
-.logo {
-  max-width: 30%;
-}
-
 /* Button styling */
 .menu-toggle {
   display: inline-block;
   padding: .75em 15px;
-  font-size: var(--TEXT-REGULAR);
+  font-size: var(--TEXT-BIG);
   color: var(--COLOR-BLACK);
 }
 
@@ -142,7 +138,7 @@
 */
 @media (min-width: 768px) {
   .logo {
-    max-width: 10%;
+    max-width: 90%;
   }
 
   .menu-toggle,

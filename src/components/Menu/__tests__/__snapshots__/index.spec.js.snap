@@ -48,11 +48,15 @@ exports[`Menu should render correctly 1`] = `
       transform={null}
     />
   </a>
-  <img
-    alt="logo"
-    className="logo"
-    src="logo.png"
-  />
+  <Link
+    to="/"
+  >
+    <img
+      alt="logo"
+      className="logo"
+      src="logo.png"
+    />
+  </Link>
   <nav
     aria-label="Main menu"
     className="main-menu"
