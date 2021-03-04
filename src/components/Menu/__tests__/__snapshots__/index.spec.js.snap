@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should render correctly 1`] = `
+<div
+  className="menu-container"
+>
+  <a
+    aria-label="Open main menu"
+    className="menu-toggle"
+    href="#main-menu"
+    id="main-menu-toggle"
+  >
+    <span
+      className="sr-only"
+    >
+      Open main menu
+    </span>
+    <FontAwesomeIcon
+      aria-hidden="true"
+      border={false}
+      className=""
+      fixedWidth={false}
+      flip={null}
+      icon={
+        Object {
+          "icon": Array [
+            448,
+            512,
+            Array [],
+            "f0c9",
+            "M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z",
+          ],
+          "iconName": "bars",
+          "prefix": "fas",
+        }
+      }
+      inverse={false}
+      listItem={false}
+      mask={null}
+      pull={null}
+      pulse={false}
+      rotation={null}
+      size={null}
+      spin={false}
+      swapOpacity={false}
+      symbol={false}
+      title=""
+      transform={null}
+    />
+  </a>
+  <img
+    alt="logo"
+    className="logo"
+    src="logo.png"
+  />
+  <nav
+    aria-label="Main menu"
+    className="main-menu"
+    id="main-menu"
+  >
+    <a
+      aria-label="Close main menu"
+      className="menu-close"
+      href="#main-menu-toggle"
+      id="main-menu-close"
+    >
+      <span
+        className="sr-only"
+      >
+        Close main menu
+      </span>
+      <FontAwesomeIcon
+        aria-hidden="true"
+        border={false}
+        className=""
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [],
+              "f410",
+              "M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-83.6 290.5c4.8 4.8 4.8 12.6 0 17.4l-40.5 40.5c-4.8 4.8-12.6 4.8-17.4 0L256 313.3l-66.5 67.1c-4.8 4.8-12.6 4.8-17.4 0l-40.5-40.5c-4.8-4.8-4.8-12.6 0-17.4l67.1-66.5-67.1-66.5c-4.8-4.8-4.8-12.6 0-17.4l40.5-40.5c4.8-4.8 12.6-4.8 17.4 0l66.5 67.1 66.5-67.1c4.8-4.8 12.6-4.8 17.4 0l40.5 40.5c4.8 4.8 4.8 12.6 0 17.4L313.3 256l67.1 66.5z",
+            ],
+            "iconName": "window-close",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+    </a>
+    <ul>
+      <li>
+        <a
+          href="#"
+        >
+          Produtos
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Quem somos
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Nossa loja
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          <FontAwesomeIcon
+            border={false}
+            className=""
+            fixedWidth={false}
+            flip={null}
+            icon={
+              Object {
+                "icon": Array [
+                  576,
+                  512,
+                  Array [],
+                  "f07a",
+                  "M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z",
+                ],
+                "iconName": "shopping-cart",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            size={null}
+            spin={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            transform={null}
+          />
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <a
+    aria-hidden="true"
+    className="backdrop"
+    hidden={true}
+    href="#main-menu-toggle"
+    tabIndex="-1"
+  />
+</div>
+`;

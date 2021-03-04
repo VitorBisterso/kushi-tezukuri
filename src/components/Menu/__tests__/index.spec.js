@@ -1,11 +1,11 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import App from './App'
+import Menu from '../index'
 
-describe('App', () => {
+describe('Menu', () => {
   it('should render correctly', () => {
-    const component = shallow(<App />)
+    const component = shallow(<Menu />)
 
     expect(component).toMatchSnapshot()
   })
