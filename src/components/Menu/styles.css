@@ -137,6 +137,10 @@
  Horizontal menu
 */
 @media (min-width: 768px) {
+  .menu-container {
+    margin: 1vw;
+  }
+
   .logo {
     max-width: 90%;
   }

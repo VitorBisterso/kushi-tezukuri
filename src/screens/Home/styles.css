@@ -1,0 +1,44 @@
+.home-container {
+  margin-top: 1.5vw;
+  overflow-x: hidden;
+}
+
+.home-textImageContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.home-textImage {
+  position: absolute;
+  padding-top: 10rem;
+  font-size: var(--TEXT-BIGGEST);
+  color: var(--COLOR-WHITE);
+  z-index: 99;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.home-backgroundImage {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  
+  opacity: 0.95;
+  height: 30rem;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .home-textImage {
+    font-size: var(--TEXT-BIG);
+    padding-top: 5rem;
+  }
+
+  .home-backgroundImage {
+    height: 16rem;
+  }
+}

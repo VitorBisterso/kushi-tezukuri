@@ -6,6 +6,7 @@
   --COLOR-LIGHT_BLACK: rgba(26, 26, 26, 1);
   --COLOR-GRAY: rgba(56, 56, 56, 1);
 
+  --TEXT-BIGGEST: 40px;
   --TEXT-BIG: 22px;
   --TEXT-REGULAR: 15px;
   --TEXT-SMALL: 12px;
@@ -18,10 +19,8 @@
 }
 
 body {
-  margin: 1vw;
+  margin: 0;
   font-family: 'Mali';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* For mobile phones: */

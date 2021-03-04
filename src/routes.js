@@ -18,9 +18,9 @@ const getPathToRoute = routeName =>
 const Routes = () => (
   <Switch>
     {allRoutes.map(route => {
-      const { isExact, path, Component } = route
+      const { name, Component, path, isExact } = route
       return (
-        <Route exact={isExact} path={path}>
+        <Route exact={isExact} path={path} key={name}>
           <Component />
         </Route>
       )
