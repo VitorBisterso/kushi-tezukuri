@@ -1,3 +1,19 @@
+:root {
+  --COLOR_GOLD: rgba(184, 161, 48, 1);
+  --COLOR_WHITE: rgba(255, 255, 255, 1);
+  --COLOR_BLACK: rgba(0, 0, 0, 1);
+
+  --TEXT_BIG: 50px;
+  --TEXT_REGULAR: 30px;
+  --TEXT_SMALL: 25px;
+  --TEXT_SMALLEST: 20px;
+
+  --BORDER-RADIUS_BIG: 30px;
+  --BORDER-RADIUS_REGULAR: 15px;
+  --BORDER-RADIUS_SMALL: 10px;
+  --BORDER-RADIUS_SMALLEST: 5px;
+}
+
 body {
   margin: 0;
   font-family: 'Mali';
