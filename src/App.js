@@ -1,5 +1,7 @@
 import React from 'react'
 
-const App = () => <h1>My app</h1>
+import Menu from './components/Menu'
+
+const App = () => <Menu />
 
 export default App
