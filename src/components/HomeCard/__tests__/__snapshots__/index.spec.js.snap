@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeCard should render correctly 1`] = `
+<button
+  className="homeCard-container"
+  onClick={[MockFunction]}
+  type="button"
+>
+  <img
+    alt="Test-homeCard"
+    className="homeCard-image"
+    src=""
+  />
+  <p
+    className="homeCard-title"
+  >
+    Test
+  </p>
+</button>
+`;

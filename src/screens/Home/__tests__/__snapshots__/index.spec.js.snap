@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should render correctly 1`] = `
+<div
+  className="home-container"
+>
+  <div
+    className="home-textImageContainer"
+  >
+    <p
+      className="home-textImage"
+    >
+      Produtos para você que procura
+      <br />
+      por 
+      <b>
+        beleza e conforto
+      </b>
+    </p>
+    <img
+      alt="background"
+      className="home-backgroundImage"
+      src=""
+    />
+  </div>
+  <div
+    className="home-cards"
+  >
+    <HomeCard
+      image=""
+      onClick={[Function]}
+      title="Máscaras"
+    />
+    <HomeCard
+      image=""
+      onClick={[Function]}
+      title="Tapetes"
+    />
+    <HomeCard
+      image=""
+      onClick={[Function]}
+      title="Encomendas"
+    />
+  </div>
+</div>
+`;

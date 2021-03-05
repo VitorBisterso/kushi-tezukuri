@@ -5,6 +5,7 @@
   --COLOR-BLACK: rgba(0, 0, 0, 1);
   --COLOR-LIGHT_BLACK: rgba(26, 26, 26, 1);
   --COLOR-GRAY: rgba(56, 56, 56, 1);
+  --COLOR-SHADOW: rgba(0, 0, 0, 0.2);
 
   --TEXT-BIGGEST: 40px;
   --TEXT-BIG: 22px;
@@ -12,7 +13,7 @@
   --TEXT-SMALL: 12px;
   --TEXT-SMALLEST: 5px;
 
-  --BORDER_RADIUS-BIG: 30px;
+  --BORDER_RADIUS-BIG: 20px;
   --BORDER_RADIUS-REGULAR: 15px;
   --BORDER_RADIUS-SMALL: 10px;
   --BORDER_RADIUS-SMALLEST: 5px;
