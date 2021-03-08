@@ -23,6 +23,7 @@
   font-size: var(--TEXT-BIG);
   color: var(--COLOR-BLACK);
   text-align: justify;
+  line-height: 1.5em;
 }
 
 .genericScreen-content img {
@@ -32,7 +33,7 @@
 
 @media (max-width: 767px) {
   .genericScreen-container {
-    margin: 0 2vw;
+    margin: 0 4vw;
   }
 
   .genericScreen-content {
@@ -44,7 +45,7 @@
   }
 
   .genericScreen-content p {
-    max-width: 80%;
+    max-width: 90%;
     font-size: var(--TEXT-REGULAR);
   }
 
