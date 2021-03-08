@@ -1,0 +1,24 @@
+.footer-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2vw 0;
+}
+
+.footer-container img {
+  margin: 0 2vw;
+  width: 4vw;
+  height: 4vw;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    margin: 4vw 0;
+  }
+
+  .footer-container img {
+    width: 8vw;
+    height: 8vw;
+  }
+}
