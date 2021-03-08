@@ -7,16 +7,20 @@ exports[`Home should render correctly 1`] = `
   <div
     className="home-textImageContainer"
   >
-    <p
-      className="home-textImage"
+    <Fade
+      top={true}
     >
-      Produtos para você que procura
-      <br />
-      por 
-      <b>
-        beleza e conforto
-      </b>
-    </p>
+      <p
+        className="home-textImage"
+      >
+        Produtos para você que procura
+        <br />
+        por 
+        <b>
+          beleza e conforto
+        </b>
+      </p>
+    </Fade>
     <img
       alt="background"
       className="home-backgroundImage"
@@ -34,21 +38,25 @@ exports[`Home should render correctly 1`] = `
     <div
       className="home-cards"
     >
-      <HomeCard
-        image=""
-        onClick={[Function]}
-        title="Máscaras"
-      />
-      <HomeCard
-        image=""
-        onClick={[Function]}
-        title="Tapetes"
-      />
-      <HomeCard
-        image=""
-        onClick={[Function]}
-        title="Jogo Americano"
-      />
+      <Fade
+        left={true}
+      >
+        <HomeCard
+          image=""
+          onClick={[Function]}
+          title="Máscaras"
+        />
+        <HomeCard
+          image=""
+          onClick={[Function]}
+          title="Tapetes"
+        />
+        <HomeCard
+          image=""
+          onClick={[Function]}
+          title="Jogo Americano"
+        />
+      </Fade>
     </div>
   </div>
 </div>

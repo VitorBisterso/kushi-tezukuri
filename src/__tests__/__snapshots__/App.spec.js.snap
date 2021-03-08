@@ -4,5 +4,6 @@ exports[`App should render correctly 1`] = `
 <Fragment>
   <Menu />
   <Routes />
+  <Footer />
 </Fragment>
 `;

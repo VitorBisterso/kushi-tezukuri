@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render correctly 1`] = `
+<div
+  className="footer-container"
+>
+  <a
+    href="https://github.com/VitorBisterso/kushi-tezukuri"
+  >
+    <img
+      alt="github-icon-footer"
+      src=""
+    />
+  </a>
+  <a
+    href="https://www.instagram.com/kushi_tezukuri/"
+  >
+    <img
+      alt="instragram-icon-footer"
+      src=""
+    />
+  </a>
+  <a
+    href="#"
+  >
+    <img
+      alt="admin-icon-footer"
+      src=""
+    />
+  </a>
+</div>
+`;
