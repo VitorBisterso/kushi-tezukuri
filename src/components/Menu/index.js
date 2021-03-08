@@ -4,16 +4,13 @@
 /* TODO: Remover restrições do eslint acima */
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faBars,
-  faShoppingCart,
-  faWindowClose,
-} from '@fortawesome/free-solid-svg-icons'
 
 import { getPathToRoute } from '../../routes'
 
 import logo from '../../assets/img/logo.png'
+import barsIcon from '../../assets/img/bars.svg'
+import closeIcon from '../../assets/img/close.svg'
+
 import './styles.css'
 
 const Menu = () => (
@@ -25,7 +22,12 @@ const Menu = () => (
       aria-label="Open main menu"
     >
       <span className="sr-only">Open main menu</span>
-      <FontAwesomeIcon icon={faBars} aria-hidden="true" />
+      <img
+        className="menu-svgIcon"
+        src={barsIcon}
+        alt="bars-menu-icon"
+        aria-hidden="true"
+      />
     </a>
 
     <Link className="menu-titleLink" to={getPathToRoute('home')}>
@@ -41,7 +43,12 @@ const Menu = () => (
         aria-label="Close main menu"
       >
         <span className="sr-only">Close main menu</span>
-        <FontAwesomeIcon icon={faWindowClose} aria-hidden="true" />
+        <img
+          className="menu-svgIcon"
+          src={closeIcon}
+          alt="close-menu-icon"
+          aria-hidden="true"
+        />
       </a>
       <ul>
         <li>
@@ -58,9 +65,7 @@ const Menu = () => (
         </li>
         <li>
           {/* TODO: Adicionar rota para a página do carrinho */}
-          <a href="#">
-            <FontAwesomeIcon icon={faShoppingCart} />
-          </a>
+          <a href="#">Carrinho</a>
         </li>
       </ul>
     </nav>

@@ -6,6 +6,7 @@ import background from '../../assets/img/bg.png'
 import mask from '../../assets/img/mask.jpg'
 import carpet from '../../assets/img/carpet.jpg'
 import towel from '../../assets/img/plateTowel.png'
+
 import './styles.css'
 
 const Home = () => (

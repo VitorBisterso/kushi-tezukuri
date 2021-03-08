@@ -62,11 +62,14 @@
   line-height: 1em;
   color: var(--COLOR-WHITE);
   text-decoration: none;
-  border-bottom: 1px solid var(--COLOR-GRAY);
 }
 
-.main-menu li:first-child a {
+.main-menu li a {
   border-top: 1px solid var(--COLOR-GRAY);
+}
+
+.main-menu li:last-child a {
+  border-bottom: 1px solid var(--COLOR-GRAY);
 }
 
 .main-menu a:hover,
@@ -135,6 +138,11 @@
 .menu-titleLogo {
   font-size: var(--TEXT-VERY_BIG);
   color: var(--COLOR-GOLD);
+}
+
+.menu-svgIcon {
+  width: 5vw;
+  height: 5vw;
 }
 
 @supports (position: fixed) {
