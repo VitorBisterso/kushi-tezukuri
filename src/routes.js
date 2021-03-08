@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 import Home from './screens/Home'
+import About from './screens/About'
 
 const allRoutes = [
   {
@@ -9,6 +10,12 @@ const allRoutes = [
     Component: Home,
     path: '/',
     isExact: true,
+  },
+  {
+    name: 'about',
+    Component: About,
+    path: '/about',
+    isExact: false,
   },
 ]
 
