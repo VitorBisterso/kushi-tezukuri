@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 
 import HomeCard from '../../components/HomeCard'
 
@@ -12,19 +13,23 @@ import './styles.css'
 const Home = () => (
   <div className="home-container">
     <div className="home-textImageContainer">
-      <p className="home-textImage">
-        Produtos para você que procura
-        <br />
-        por <b>beleza e conforto</b>
-      </p>
+      <Fade top>
+        <p className="home-textImage">
+          Produtos para você que procura
+          <br />
+          por <b>beleza e conforto</b>
+        </p>
+      </Fade>
       <img className="home-backgroundImage" src={background} alt="background" />
     </div>
     <div className="home-whatWeOffer">
       <p className="home-whatWeOfferTitle">O que oferecemos</p>
       <div className="home-cards">
-        <HomeCard title="Máscaras" image={mask} onClick={() => null} />
-        <HomeCard title="Tapetes" image={carpet} onClick={() => null} />
-        <HomeCard title="Jogo Americano" image={towel} onClick={() => null} />
+        <Fade left>
+          <HomeCard title="Máscaras" image={mask} onClick={() => null} />
+          <HomeCard title="Tapetes" image={carpet} onClick={() => null} />
+          <HomeCard title="Jogo Americano" image={towel} onClick={() => null} />
+        </Fade>
       </div>
     </div>
   </div>
