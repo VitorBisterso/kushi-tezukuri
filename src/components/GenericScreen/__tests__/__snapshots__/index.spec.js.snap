@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GenericScreen should render correctly 1`] = `
+<div
+  className="genericScreen-container"
+>
+  <p
+    className="genericScreen-title"
+  >
+    Test
+  </p>
+  <div
+    className="genericScreen-content"
+  >
+    <Fade
+      left={true}
+    >
+      <p>
+        This is a test
+      </p>
+    </Fade>
+    <Fade
+      right={true}
+    >
+      <img
+        alt="genericScreen-svg"
+        src=""
+      />
+    </Fade>
+  </div>
+</div>
+`;

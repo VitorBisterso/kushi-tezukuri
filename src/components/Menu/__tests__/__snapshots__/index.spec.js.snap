@@ -69,18 +69,18 @@ exports[`Menu should render correctly 1`] = `
         </a>
       </li>
       <li>
-        <a
-          href="#"
+        <Link
+          to="/about"
         >
           Quem somos
-        </a>
+        </Link>
       </li>
       <li>
-        <a
-          href="#"
+        <Link
+          to="/ourStore"
         >
           Nossa loja
-        </a>
+        </Link>
       </li>
       <li>
         <a

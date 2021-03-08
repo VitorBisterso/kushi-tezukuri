@@ -1,54 +1,54 @@
-.about-container {
+.genericScreen-container {
   display: flex;
   flex: 1;
   flex-direction: column;
   margin: 0 5vw;
 }
 
-.about-content {
+.genericScreen-content {
   display: flex;
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.about-title {
+.genericScreen-title {
   font-family: 'Mali-Bold';
   font-size: var(--TEXT-BIGGEST);
   color: var(--COLOR-GOLD);
 }
 
-.about-content p {
+.genericScreen-content p {
   max-width: 50%;
   font-size: var(--TEXT-BIG);
   color: var(--COLOR-BLACK);
   text-align: justify;
 }
 
-.about-content img {
+.genericScreen-content img {
   margin-top: -5vw;
   width: 40%;
 }
 
 @media (max-width: 767px) {
-  .about-container {
+  .genericScreen-container {
     margin: 0 2vw;
   }
 
-  .about-content {
+  .genericScreen-content {
     flex-direction: column;
   }
 
-  .about-title {
+  .genericScreen-title {
     font-size: var(--TEXT-VERY_BIG);
   }
 
-  .about-content p {
+  .genericScreen-content p {
     max-width: 80%;
     font-size: var(--TEXT-REGULAR);
   }
 
-  .about-content img {
+  .genericScreen-content img {
     margin: 2vw 0;
     width: 75%;
   }

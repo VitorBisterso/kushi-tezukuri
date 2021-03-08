@@ -56,13 +56,10 @@ const Menu = () => (
           <a href="#">Produtos</a>
         </li>
         <li>
-          {/* TODO: Adicionar rota para a página de quem somos */}
-          {/* <a href="#">Quem somos</a> */}
-          <Link to={getPathToRoute('about')}>Quem Somos</Link>
+          <Link to={getPathToRoute('about')}>Quem somos</Link>
         </li>
         <li>
-          {/* TODO: Adicionar rota para a página da loja */}
-          <a href="#">Nossa loja</a>
+          <Link to={getPathToRoute('ourStore')}>Nossa loja</Link>
         </li>
         <li>
           {/* TODO: Adicionar rota para a página do carrinho */}

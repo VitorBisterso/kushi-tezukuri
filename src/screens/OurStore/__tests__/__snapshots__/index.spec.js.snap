@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OurStore should render correctly 1`] = `
+<GenericScreen
+  image=""
+  mainText="Postamos nossos produtos no perfil @kushi_tezukuri no instagram e fazemos nossas vendas pelo direct! É só adicionar seus produtos por aqui e mandar uma mensagem pra gente ;)"
+  title="Nossa loja"
+/>
+`;
