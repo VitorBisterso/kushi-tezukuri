@@ -49,13 +49,19 @@ exports[`Menu should render correctly 1`] = `
     />
   </a>
   <Link
+    className="menu-titleLink"
     to="/"
   >
     <img
       alt="logo"
-      className="logo"
+      className="menu-logo"
       src=""
     />
+    <p
+      className="menu-titleLogo"
+    >
+      Kushi Tezukuri
+    </p>
   </Link>
   <nav
     aria-label="Main menu"

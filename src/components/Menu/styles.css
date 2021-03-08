@@ -124,6 +124,19 @@
   cursor: default;
 }
 
+.menu-logo {
+  display: none;
+}
+
+.menu-titleLink {
+  text-decoration: none;
+}
+
+.menu-titleLogo {
+  font-size: var(--TEXT-VERY_BIG);
+  color: var(--COLOR-GOLD);
+}
+
 @supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop,
@@ -141,8 +154,13 @@
     margin: 1vw;
   }
 
-  .logo {
+  .menu-logo {
+    display: inline-block;
     max-width: 90%;
+  }
+
+  .menu-titleLogo {
+    display: none;
   }
 
   .menu-toggle,

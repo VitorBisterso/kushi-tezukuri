@@ -38,4 +38,21 @@
   font-size: var(--TEXT-BIG);
   color: var(--COLOR-WHITE);
   background-color: var(--COLOR-SHADOW);
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+@media (max-width: 767px) {
+  .homeCard-container {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .homeCard-title {
+    font-size: var(--TEXT-REGULAR);
+  }
 }

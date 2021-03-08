@@ -28,8 +28,9 @@ const Menu = () => (
       <FontAwesomeIcon icon={faBars} aria-hidden="true" />
     </a>
 
-    <Link to={getPathToRoute('home')}>
-      <img className="logo" src={logo} alt="logo" />
+    <Link className="menu-titleLink" to={getPathToRoute('home')}>
+      <img className="menu-logo" src={logo} alt="logo" />
+      <p className="menu-titleLogo">Kushi Tezukuri</p>
     </Link>
 
     <nav id="main-menu" className="main-menu" aria-label="Main menu">

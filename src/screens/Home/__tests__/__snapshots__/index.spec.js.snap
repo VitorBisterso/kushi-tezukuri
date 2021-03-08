@@ -24,23 +24,32 @@ exports[`Home should render correctly 1`] = `
     />
   </div>
   <div
-    className="home-cards"
+    className="home-whatWeOffer"
   >
-    <HomeCard
-      image=""
-      onClick={[Function]}
-      title="Máscaras"
-    />
-    <HomeCard
-      image=""
-      onClick={[Function]}
-      title="Tapetes"
-    />
-    <HomeCard
-      image=""
-      onClick={[Function]}
-      title="Encomendas"
-    />
+    <p
+      className="home-whatWeOfferTitle"
+    >
+      O que oferecemos
+    </p>
+    <div
+      className="home-cards"
+    >
+      <HomeCard
+        image=""
+        onClick={[Function]}
+        title="Máscaras"
+      />
+      <HomeCard
+        image=""
+        onClick={[Function]}
+        title="Tapetes"
+      />
+      <HomeCard
+        image=""
+        onClick={[Function]}
+        title="Jogo Americano"
+      />
+    </div>
   </div>
 </div>
 `;
