@@ -1,11 +1,10 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 /* TODO: Remover restrições do eslint acima */
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { getPathToRoute } from '../../routes'
+import { getPathToRoute } from '../../routes/routes'
 
 import logo from '../../assets/img/logo.png'
 import barsIcon from '../../assets/img/bars.svg'
@@ -52,8 +51,7 @@ const Menu = () => (
       </a>
       <ul>
         <li>
-          {/* TODO: Adicionar rota para a página de produtos */}
-          <a href="#">Produtos</a>
+          <Link to={getPathToRoute('products')}>Produtos</Link>
         </li>
         <li>
           <Link to={getPathToRoute('about')}>Quem somos</Link>
@@ -67,6 +65,7 @@ const Menu = () => (
         </li>
       </ul>
     </nav>
+    {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
     <a
       href="#main-menu-toggle"
       className="backdrop"
