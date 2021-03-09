@@ -12,7 +12,7 @@
 
 .menu-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 /* Button styling */
@@ -133,6 +133,11 @@
 
 .menu-titleLink {
   text-decoration: none;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 0 auto;
+  padding-right: 9vw;
 }
 
 .menu-titleLogo {
@@ -141,8 +146,8 @@
 }
 
 .menu-svgIcon {
-  width: 5vw;
-  height: 5vw;
+  width: 20px;
+  height: 20px;
 }
 
 @supports (position: fixed) {
@@ -160,6 +165,12 @@
 @media (min-width: 768px) {
   .menu-container {
     margin: 1vw;
+    align-items: center;
+  }
+
+  .menu-titleLink {
+    all: initial;
+    text-decoration: none;
   }
 
   .menu-logo {
