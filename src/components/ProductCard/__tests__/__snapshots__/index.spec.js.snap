@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard should render correctly 1`] = `
+<div
+  className="productCard-container"
+>
+  <img
+    alt="product"
+    src=""
+  />
+  <div
+    className="productCard-content"
+  >
+    <p
+      className="productCard-title"
+    >
+      Test card
+    </p>
+    <div
+      className="productCard-bottom"
+    >
+      <p>
+        R$ 
+        5
+      </p>
+      <div
+        className="productCard-units"
+      >
+        <p>
+          x
+        </p>
+        <input
+          type="number"
+        />
+        <p>
+          un.
+        </p>
+      </div>
+      <button
+        type="button"
+      >
+        <img
+          alt="editIcon"
+          src=""
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
