@@ -22,7 +22,7 @@ const Menu = () => (
     >
       <span className="sr-only">Open main menu</span>
       <img
-        className="menu-svgIcon"
+        className="menu-svgBarsIcon"
         src={barsIcon}
         alt="bars-menu-icon"
         aria-hidden="true"
@@ -43,7 +43,7 @@ const Menu = () => (
       >
         <span className="sr-only">Close main menu</span>
         <img
-          className="menu-svgIcon"
+          className="menu-svgCloseIcon"
           src={closeIcon}
           alt="close-menu-icon"
           aria-hidden="true"

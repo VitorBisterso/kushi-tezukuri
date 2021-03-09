@@ -145,9 +145,14 @@
   color: var(--COLOR-GOLD);
 }
 
-.menu-svgIcon {
+.menu-svgBarsIcon {
   width: 20px;
   height: 20px;
+}
+
+.menu-svgCloseIcon {
+  width: 14px;
+  height: 14px;
 }
 
 @supports (position: fixed) {
@@ -174,6 +179,7 @@
   }
 
   .menu-logo {
+    cursor: pointer;
     display: inline-block;
     max-width: 90%;
   }

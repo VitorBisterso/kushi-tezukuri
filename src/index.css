@@ -25,6 +25,12 @@ body {
   font-family: 'Mali';
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;

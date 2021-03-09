@@ -1,3 +1,10 @@
+.products-loading {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
 .products-productsList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
