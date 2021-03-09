@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import convertPriceToBrSyntax from '../../utils'
+
 import cartIcon from '../../assets/img/cart.svg'
 import editIcon from '../../assets/img/edit.svg'
 
@@ -23,7 +25,7 @@ const ProductCard = ({ title, price, image, isAdminPage }) => (
     <div className="productCard-content">
       <p className="productCard-title">{title}</p>
       <div className="productCard-bottom">
-        <p>R$ {price}</p>
+        <p>{convertPriceToBrSyntax(price)}</p>
         <div className="productCard-units">
           <p>x</p>
           <input type="number" />
