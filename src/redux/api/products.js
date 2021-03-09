@@ -4,7 +4,7 @@ import productActions from '../actions/products'
 import allProducts from '../mocks/products.json'
 
 const hasError = false
-const apiResponseTime = 1500
+const apiResponseTime = 500
 
 const fetchAllProducts = () => dispatch => {
   dispatch(productActions.fetchAllProductsRequestAction())
