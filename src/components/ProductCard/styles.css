@@ -75,19 +75,13 @@
   box-shadow: 2px 2px 2px var(--COLOR-SHADOW);
   justify-content: center;
   align-items: center;
+  transition: all 0.2s linear;
+}
+
+.productCard-bottom button:hover {
+  background-color: var(--COLOR-DARK_GOLD);
 }
 
 .productCard-bottom button > img {
   width: 125%;
-}
-
-/* input type number without arrows */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
 }
