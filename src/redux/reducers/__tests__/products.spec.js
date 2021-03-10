@@ -27,17 +27,25 @@ describe('Products reducer', () => {
       })
     })
     it('should handle FETCH_ALL_PRODUCTS_SUCCESS', () => {
-      const products = [{ name: 'Test name', typeOfProduct: 'mask' }]
+      const allProducts = [
+        {
+          id: 1,
+          name: 'Máscara de bolinhas vermelha e detalhes em cinza',
+          price: 6.5,
+          typeOfProduct: 'mask',
+          typeOfCut: 'F',
+        },
+      ]
       const typesOfProduct = [{ typeOfProduct: 'mask', amount: 1 }]
 
       const action = {
         type: productsActionsTypes.FETCH_ALL_PRODUCTS_SUCCESS,
-        payload: { products, typesOfProduct },
+        payload: { allProducts, typesOfProduct },
       }
       expect(productsReducer(INITIAL_STATE, action)).toEqual({
         ...INITIAL_STATE,
         isLoading: false,
-        products,
+        allProducts,
         typesOfProduct,
       })
     })

@@ -31,6 +31,15 @@ describe('TypesOfProduct', () => {
     const { getByTestId } = render(<FiltersList />, {
       initialState: {
         productsReducer: {
+          allProducts: [
+            {
+              id: 1,
+              name: 'Máscara de bolinhas vermelha e detalhes em cinza',
+              price: 6.5,
+              typeOfProduct: 'mask',
+              typeOfCut: 'F',
+            },
+          ],
           typesOfProduct: [{ typeOfProduct: 'mask', amount: 1 }],
         },
       },

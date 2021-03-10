@@ -11,7 +11,14 @@ import './styles.css'
 
 const Products = () => {
   const dispatch = useDispatch()
-  const { products, isLoading } = useSelector(state => state.productsReducer)
+  const { allProducts, filteredProducts, isLoading } = useSelector(
+    state => state.productsReducer
+  )
+
+  const chooseWhichListOfProductsToRender = () =>
+    allProducts.length === filteredProducts.length
+      ? allProducts
+      : filteredProducts
 
   useEffect(() => {
     dispatch(ProductsApi.fetchAllProducts())
@@ -25,7 +32,7 @@ const Products = () => {
     <div className="products-container">
       <TypesOfProduct />
       <div className="products-productsList">
-        <ProductsList products={products} />
+        <ProductsList products={chooseWhichListOfProductsToRender()} />
       </div>
     </div>
   )

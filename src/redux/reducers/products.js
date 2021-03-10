@@ -2,7 +2,8 @@ import productsActionsTypes from '../constants/products'
 
 export const INITIAL_STATE = {
   isLoading: false,
-  products: [],
+  allProducts: [],
+  filteredProducts: [],
   typesOfProduct: [],
   hasError: false,
 }
@@ -24,8 +25,13 @@ const productsReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isLoading: false,
-        products: action.payload.products,
+        allProducts: action.payload.allProducts,
         typesOfProduct: action.payload.typesOfProduct,
+      }
+    case productsActionsTypes.SET_CURRENT_FILTERED_PRODUCTS:
+      return {
+        ...state,
+        filteredProducts: action.payload,
       }
     default:
       return state

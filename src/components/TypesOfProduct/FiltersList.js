@@ -1,12 +1,29 @@
-import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+
+import productActions from '../../redux/actions/products'
 
 import Checkbox from '../Checkbox'
 
 const FiltersList = () => {
-  const [filters, setFilters] = useState([])
+  const dispatch = useDispatch()
 
-  const { typesOfProduct } = useSelector(state => state.productsReducer)
+  const [filters, setFilters] = useState([])
+  const { allProducts, typesOfProduct } = useSelector(
+    state => state.productsReducer
+  )
+
+  useEffect(() => {
+    const filteredProducts = allProducts.filter(product =>
+      filters.includes(product.typeOfProduct)
+    )
+
+    if (filters.length !== typesOfProduct.length && filters.length !== 0) {
+      dispatch(productActions.setCurrentFilteredProducts(filteredProducts))
+    } else {
+      dispatch(productActions.setCurrentFilteredProducts(allProducts))
+    }
+  }, [JSON.stringify(filters)])
 
   const handleCheckboxChange = (e, typeOfProduct) =>
     e.target.checked
