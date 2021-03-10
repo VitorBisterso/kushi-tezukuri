@@ -133,11 +133,6 @@
 
 .menu-titleLink {
   text-decoration: none;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  margin: 0 auto;
-  padding-right: 9vw;
 }
 
 .menu-titleLogo {
@@ -171,11 +166,6 @@
   .menu-container {
     margin: 1vw;
     align-items: center;
-  }
-
-  .menu-titleLink {
-    all: initial;
-    text-decoration: none;
   }
 
   .menu-logo {

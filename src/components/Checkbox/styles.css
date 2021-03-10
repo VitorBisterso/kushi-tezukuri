@@ -1,0 +1,28 @@
+.checkbox-container > input {
+  display: none;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background-color: var(--COLOR-WHITE);
+  border: 1px solid var(--COLOR-GOLD);
+  border-radius: var(--BORDER_RADIUS-SMALLEST);
+  transition: all 0.2s linear;
+}
+
+.checkbox-filled {
+  display: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: var(--COLOR-GOLD);
+}
+
+.checkbox-container > input:checked ~ .checkbox-filled {
+  display: block;
+}

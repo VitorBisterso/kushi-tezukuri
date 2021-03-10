@@ -1,18 +1,63 @@
 .typesOfProduct-container {
-  display: flex;
   flex: 1;
   flex-direction: column;
 }
 
-.typesOfProduct-container > p {
+.typesOfProduct-filtersHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.typesOfProduct-filtersHeader > p {
   margin-top: 0;
-  font-size: var(--TEXT-BIG);
+  font-size: var(--TEXT-MEDIUM);
   color: var(--COLOR-BLACK);
   font-family: 'Mali-SemiBold';
 }
 
+.typesOfProduct-filtersButton {
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: var(--COLOR-WHITE);
+  text-decoration: underline;
+}
+
 .typesOfProduct-filters {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   border-radius: var(--BORDER_RADIUS-REGULAR);
   box-shadow: 0px 5px 15px var(--COLOR-SHADOW);
+}
+
+.typesOfProduct-filters > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.typesOfProduct-filters p {
+  margin-left: 15px;
+  font-size: var(--TEXT-REGULAR);
+}
+
+@media (max-width: 767px) {
+  .typesOfProduct-container {
+    width: 75%;
+    margin: 0 auto 20px auto;
+  }
+
+  .typesOfProduct-filtersHeader > p {
+    font-size: var(--TEXT-REGULAR);
+  }
+
+  .typesOfProduct-filtersButton {
+    font-family: 'Mali-SemiBold';
+    display: block;
+    color: var(--COLOR-GOLD);
+    margin-bottom: 10px;
+  }
 }

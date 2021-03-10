@@ -31,5 +31,11 @@
     "name": "Tapete azul",
     "price": 16,
     "typeOfProduct": "carpet"
+  },
+  {
+    "id": 6,
+    "name": "Jogo americano branco",
+    "price": 20,
+    "typeOfProduct": "plateTowel"
   }
 ]
