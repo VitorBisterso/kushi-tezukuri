@@ -17,7 +17,7 @@ ToggleFiltersButton.propTypes = {
   isVisible: PropTypes.bool,
   textAlign: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
-  title: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 ToggleFiltersButton.defaultProps = {

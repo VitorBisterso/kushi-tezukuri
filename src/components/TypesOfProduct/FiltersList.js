@@ -23,7 +23,7 @@ const FiltersList = () => {
           value={isChecked}
           onChange={e => handleCheckboxChange(e, typeOfProduct)}
         />
-        <p>
+        <p data-testid="typeOfProductName">
           {typeOfProduct} ({amount})
         </p>
       </div>

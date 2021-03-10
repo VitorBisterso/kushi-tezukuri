@@ -1,7 +1,5 @@
 import Utils from '../index'
 
-import products from '../../__mocks__/products.json'
-
 describe('ConvertPriceToBrSyntax function', () => {
   const prices = [
     [6, 'R$ 6,00'],
@@ -21,9 +19,38 @@ describe('ConvertPriceToBrSyntax function', () => {
 
 describe('getTypesOfProduct function', () => {
   it('should get all product types and their correct amount', () => {
+    const products = [
+      {
+        id: 1,
+        name: 'Máscara de bolinhas branca',
+        price: 8,
+        typeOfProduct: 'mask',
+        typeOfCut: 'A',
+      },
+      {
+        id: 2,
+        name: 'Tapete verde',
+        price: 15.5,
+        typeOfProduct: 'carpet',
+      },
+      {
+        id: 3,
+        name: 'Tapete azul',
+        price: 16,
+        typeOfProduct: 'carpet',
+      },
+      {
+        id: 4,
+        name: 'Jogo americano branco',
+        price: 20,
+        typeOfProduct: 'plateTowel',
+      },
+    ]
+
     const expectedArray = [
-      { typeOfProduct: 'mask', amount: 3 },
+      { typeOfProduct: 'mask', amount: 1 },
       { typeOfProduct: 'carpet', amount: 2 },
+      { typeOfProduct: 'plateTowel', amount: 1 },
     ]
 
     expect(expectedArray).toStrictEqual(Utils.getTypesOfProduct(products))

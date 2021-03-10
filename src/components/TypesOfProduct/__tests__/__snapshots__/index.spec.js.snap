@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TypesOfProduct should render ToggleFiltersButton correctly 1`] = `
+<button
+  className="typesOfProduct-filtersButton"
+  onClick={[MockFunction]}
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+  type="button"
+>
+  Test title
+</button>
+`;
+
+exports[`TypesOfProduct should render TypesOfProduct correctly 1`] = `
+<Fragment>
+  <ToggleFiltersButton
+    isVisible={false}
+    onClick={[Function]}
+    textAlign="right"
+    title="Ocultar filtros"
+  />
+  <div
+    className="typesOfProduct-container"
+    style={
+      Object {
+        "display": "flex",
+      }
+    }
+  >
+    <div
+      className="typesOfProduct-filtersHeader"
+    >
+      <p>
+        Filtrar por produto
+      </p>
+      <ToggleFiltersButton
+        isVisible={true}
+        onClick={[Function]}
+        textAlign="right"
+        title="Ocultar filtros"
+      />
+    </div>
+    <div
+      className="typesOfProduct-filters"
+    >
+      <FiltersList />
+    </div>
+  </div>
+</Fragment>
+`;
