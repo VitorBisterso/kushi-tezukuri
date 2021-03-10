@@ -11,9 +11,7 @@ import './styles.css'
 
 const Products = () => {
   const dispatch = useDispatch()
-  const { productsList, isLoading } = useSelector(
-    state => state.productsReducer
-  )
+  const { products, isLoading } = useSelector(state => state.productsReducer)
 
   useEffect(() => {
     dispatch(ProductsApi.fetchAllProducts())
@@ -27,7 +25,7 @@ const Products = () => {
     <div className="products-container">
       <TypesOfProduct />
       <div className="products-productsList">
-        <ProductsList products={productsList} />
+        <ProductsList products={products} />
       </div>
     </div>
   )

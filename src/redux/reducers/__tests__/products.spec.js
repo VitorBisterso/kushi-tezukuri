@@ -37,7 +37,7 @@ describe('Products reducer', () => {
       expect(productsReducer(INITIAL_STATE, action)).toEqual({
         ...INITIAL_STATE,
         isLoading: false,
-        productsList: products,
+        products,
         typesOfProduct,
       })
     })
