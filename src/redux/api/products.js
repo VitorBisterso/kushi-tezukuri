@@ -1,7 +1,7 @@
 import productActions from '../actions/products'
 
 /* TODO: Remove mocks (import statement and non-sense variables) */
-import allProducts from '../mocks/products.json'
+import allProducts from '../../__mocks__/products.json'
 
 const hasError = false
 const apiResponseTime = 500

@@ -20,10 +20,12 @@ describe('Products actions', () => {
       )
     })
     it('should create an action due to fetching all products successfully', () => {
-      const products = [{ name: 'Test name' }]
+      const products = [{ name: 'Test name', typeOfProduct: 'mask' }]
+      const typesOfProduct = [{ typeOfProduct: 'mask', amount: 1 }]
+
       const expectedAction = {
         type: productsActionsTypes.FETCH_ALL_PRODUCTS_SUCCESS,
-        payload: products,
+        payload: { products, typesOfProduct },
       }
       expect(productsActions.fetchAllProductsSuccessAction(products)).toEqual(
         expectedAction

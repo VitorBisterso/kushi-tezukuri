@@ -3,6 +3,7 @@ import productsActionsTypes from '../constants/products'
 export const INITIAL_STATE = {
   isLoading: false,
   productsList: [],
+  typesOfProduct: [],
   hasError: false,
 }
 
@@ -23,7 +24,8 @@ const productsReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         isLoading: false,
-        productsList: action.payload,
+        productsList: action.payload.products,
+        typesOfProduct: action.payload.typesOfProduct,
       }
     default:
       return state

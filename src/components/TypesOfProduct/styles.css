@@ -1,0 +1,18 @@
+.typesOfProduct-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.typesOfProduct-container > p {
+  margin-top: 0;
+  font-size: var(--TEXT-BIG);
+  color: var(--COLOR-BLACK);
+  font-family: 'Mali-SemiBold';
+}
+
+.typesOfProduct-filters {
+  padding: 10px;
+  border-radius: var(--BORDER_RADIUS-REGULAR);
+  box-shadow: 0px 5px 15px var(--COLOR-SHADOW);
+}

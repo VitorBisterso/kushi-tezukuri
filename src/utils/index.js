@@ -15,4 +15,25 @@ const convertPriceToBrSyntax = number => {
   return `R$ ${convertedToString},00`
 }
 
-export default convertPriceToBrSyntax
+const getTypesOfProduct = products => {
+  const types = []
+  products.forEach(product => {
+    const { typeOfProduct } = product
+    const indexOfType = types.findIndex(
+      type => type.typeOfProduct === typeOfProduct
+    )
+
+    if (indexOfType === -1) {
+      types.push({ typeOfProduct, amount: 1 })
+    } else {
+      types[indexOfType] = {
+        ...types[indexOfType],
+        amount: types[indexOfType].amount + 1,
+      }
+    }
+  })
+
+  return types
+}
+
+export default { convertPriceToBrSyntax, getTypesOfProduct }

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import ProductsApi from '../../redux/api/products'
 
 import ProductsList from '../../components/ProductsList'
+import TypesOfProduct from '../../components/TypesOfProduct'
 import Loading from '../../components/Loading'
 
 import './styles.css'
@@ -23,8 +24,11 @@ const Products = () => {
       <Loading />
     </div>
   ) : (
-    <div className="products-productsList">
-      <ProductsList products={productsList} />
+    <div className="products-container">
+      <TypesOfProduct />
+      <div className="products-productsList">
+        <ProductsList products={productsList} />
+      </div>
     </div>
   )
 }
