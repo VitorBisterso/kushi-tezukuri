@@ -7,20 +7,31 @@ exports[`Home should render correctly 1`] = `
   <div
     className="home-textImageContainer"
   >
-    <Fade
-      top={true}
+    <ForwardRef(MotionComponent)
+      animate={
+        Object {
+          "y": 0,
+        }
+      }
+      className="home-textImage"
+      initial={
+        Object {
+          "y": "-100vh",
+        }
+      }
+      transition={
+        Object {
+          "delay": 0.2,
+        }
+      }
     >
-      <p
-        className="home-textImage"
-      >
-        Produtos para você que procura
-        <br />
-        por 
-        <b>
-          beleza e conforto
-        </b>
-      </p>
-    </Fade>
+      Produtos para você que procura
+      <br />
+      por 
+      <b>
+        beleza e conforto
+      </b>
+    </ForwardRef(MotionComponent)>
     <img
       alt="background"
       className="home-backgroundImage"
@@ -38,25 +49,21 @@ exports[`Home should render correctly 1`] = `
     <div
       className="home-cards"
     >
-      <Fade
-        left={true}
-      >
-        <HomeCard
-          image=""
-          onClick={[Function]}
-          title="Máscaras"
-        />
-        <HomeCard
-          image=""
-          onClick={[Function]}
-          title="Tapetes"
-        />
-        <HomeCard
-          image=""
-          onClick={[Function]}
-          title="Jogo Americano"
-        />
-      </Fade>
+      <HomeCard
+        image=""
+        onClick={[Function]}
+        title="Máscaras"
+      />
+      <HomeCard
+        image=""
+        onClick={[Function]}
+        title="Tapetes"
+      />
+      <HomeCard
+        image=""
+        onClick={[Function]}
+        title="Jogo Americano"
+      />
     </div>
   </div>
 </div>

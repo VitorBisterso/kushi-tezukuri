@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProductCard should render correctly 1`] = `
-<div
+<ForwardRef(MotionComponent)
   className="productCard-container"
+  layout={true}
 >
   <img
     alt="product"
@@ -48,5 +49,5 @@ exports[`ProductCard should render correctly 1`] = `
       </button>
     </div>
   </div>
-</div>
+</ForwardRef(MotionComponent)>
 `;

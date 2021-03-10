@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import { motion } from 'framer-motion'
 
 import Utils from '../../utils'
 
@@ -31,7 +32,7 @@ const ProductCard = ({ title, price, image, isAdminPage }) => {
   }
 
   return (
-    <div className="productCard-container">
+    <motion.div className="productCard-container" layout>
       <img src={image} alt="product" />
       <div className="productCard-content">
         <p className="productCard-title">{title}</p>
@@ -50,7 +51,7 @@ const ProductCard = ({ title, price, image, isAdminPage }) => {
           {renderButton(isAdminPage)}
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

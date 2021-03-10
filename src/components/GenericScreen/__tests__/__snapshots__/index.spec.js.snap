@@ -12,21 +12,46 @@ exports[`GenericScreen should render correctly 1`] = `
   <div
     className="genericScreen-content"
   >
-    <Fade
-      left={true}
+    <ForwardRef(MotionComponent)
+      animate={
+        Object {
+          "x": 0,
+        }
+      }
+      initial={
+        Object {
+          "x": "-100vw",
+        }
+      }
+      transition={
+        Object {
+          "delay": 0.2,
+          "duration": 0.5,
+        }
+      }
     >
-      <p>
-        This is a test
-      </p>
-    </Fade>
-    <Fade
-      right={true}
-    >
-      <img
-        alt="genericScreen-svg"
-        src=""
-      />
-    </Fade>
+      This is a test
+    </ForwardRef(MotionComponent)>
+    <ForwardRef(MotionComponent)
+      alt="genericScreen-svg"
+      animate={
+        Object {
+          "x": 0,
+        }
+      }
+      initial={
+        Object {
+          "x": "100vh",
+        }
+      }
+      src=""
+      transition={
+        Object {
+          "delay": 0.2,
+          "duration": 0.5,
+        }
+      }
+    />
   </div>
 </div>
 `;

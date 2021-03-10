@@ -1,19 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Fade from 'react-reveal/Fade'
+import { motion } from 'framer-motion'
 
 import './styles.css'
+
+const initial = value => ({ x: value })
+const animate = { x: 0 }
+const transition = { delay: 0.2, duration: 0.5 }
 
 const GenericScreen = ({ title, mainText, image }) => (
   <div className="genericScreen-container">
     <p className="genericScreen-title">{title}</p>
     <div className="genericScreen-content">
-      <Fade left>
-        <p>{mainText}</p>
-      </Fade>
-      <Fade right>
-        <img src={image} alt="genericScreen-svg" />
-      </Fade>
+      <motion.p
+        initial={initial('-100vw')}
+        animate={animate}
+        transition={transition}
+      >
+        {mainText}
+      </motion.p>
+      <motion.img
+        src={image}
+        alt="genericScreen-svg"
+        initial={initial('100vh')}
+        animate={animate}
+        transition={transition}
+      />
     </div>
   </div>
 )
