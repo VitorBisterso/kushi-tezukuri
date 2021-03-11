@@ -36,4 +36,21 @@ const getTypesOfProduct = products => {
   return types
 }
 
-export default { convertPriceToBrSyntax, getTypesOfProduct }
+const translateTypeOfProduct = type => {
+  switch (type) {
+    case 'mask':
+      return 'Máscaras'
+    case 'carpet':
+      return 'Tapetes'
+    case 'plateTowel':
+      return 'Jogo Americano'
+    default:
+      return type
+  }
+}
+
+export default {
+  convertPriceToBrSyntax,
+  getTypesOfProduct,
+  translateTypeOfProduct,
+}

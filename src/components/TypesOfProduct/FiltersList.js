@@ -5,6 +5,8 @@ import productActions from '../../redux/actions/products'
 
 import Checkbox from '../Checkbox'
 
+import Utils from '../../utils'
+
 const FiltersList = () => {
   const dispatch = useDispatch()
 
@@ -41,7 +43,7 @@ const FiltersList = () => {
           onChange={e => handleCheckboxChange(e, typeOfProduct)}
         />
         <p data-testid="typeOfProductName">
-          {typeOfProduct} ({amount})
+          {Utils.translateTypeOfProduct(typeOfProduct)} ({amount})
         </p>
       </div>
     )

@@ -56,3 +56,12 @@ describe('getTypesOfProduct function', () => {
     expect(expectedArray).toStrictEqual(Utils.getTypesOfProduct(products))
   })
 })
+
+describe('translateTypeOfProduct function', () => {
+  it('should translate a type to a more user-friendly word', () => {
+    const type = 'mask'
+    const expectedResult = 'Máscaras'
+
+    expect(expectedResult).toBe(Utils.translateTypeOfProduct(type))
+  })
+})
