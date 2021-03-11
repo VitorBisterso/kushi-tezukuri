@@ -34,11 +34,25 @@ const productsReducer = (state = INITIAL_STATE, action) => {
         ...state,
         filteredProducts: action.payload,
       }
-    case productsActionsTypes.ADD_PRODUCT_TO_CART:
+    case productsActionsTypes.ADD_PRODUCT_TO_CART: {
+      const { product: newProduct, amount } = action.payload
+
+      const productInCartIndex = state.cart.findIndex(
+        product => product.id === newProduct.id
+      )
+      const newCart = [...state.cart]
+
+      if (productInCartIndex !== -1) {
+        newCart[productInCartIndex].amount += amount
+      } else {
+        newCart.push({ ...newProduct, amount })
+      }
+
       return {
         ...state,
-        cart: [...state.cart, action.payload],
+        cart: newCart,
       }
+    }
     case productsActionsTypes.REMOVE_PRODUCT_FROM_CART:
       return {
         ...state,

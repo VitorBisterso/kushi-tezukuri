@@ -21,26 +21,26 @@ describe('getTypesOfProduct function', () => {
   it('should get all product types and their correct amount', () => {
     const products = [
       {
-        id: 1,
+        id: '1',
         name: 'Máscara de bolinhas branca',
         price: 8,
         typeOfProduct: 'mask',
         typeOfCut: 'A',
       },
       {
-        id: 2,
+        id: '2',
         name: 'Tapete verde',
         price: 15.5,
         typeOfProduct: 'carpet',
       },
       {
-        id: 3,
+        id: '3',
         name: 'Tapete azul',
         price: 16,
         typeOfProduct: 'carpet',
       },
       {
-        id: 4,
+        id: '4',
         name: 'Jogo americano branco',
         price: 20,
         typeOfProduct: 'plateTowel',

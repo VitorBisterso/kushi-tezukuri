@@ -1,39 +1,39 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "Máscara de bolinhas vermelha e detalhes em cinza",
     "price": 6.50,
     "typeOfProduct": "mask",
     "typeOfCut": "F"
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Máscara de bolinhas preta",
     "price": 10.50,
     "typeOfProduct": "mask",
     "typeOfCut": "M"
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Máscara de bolinhas branca",
     "price": 8,
     "typeOfProduct": "mask",
     "typeOfCut": "A"
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "Tapete verde",
     "price": 15.50,
     "typeOfProduct": "carpet"
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "Tapete azul",
     "price": 16,
     "typeOfProduct": "carpet"
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "Jogo americano branco",
     "price": 20,
     "typeOfProduct": "plateTowel"

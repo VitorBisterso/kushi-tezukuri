@@ -2,10 +2,14 @@
 
 exports[`ProductsList should render correctly 1`] = `
 <ProductCard
-  image=""
-  isAdminPage={false}
+  isUserLogged={false}
   key="1"
-  price={10}
-  title="Test name"
+  product={
+    Object {
+      "id": "1",
+      "name": "Test name",
+      "price": 10,
+    }
+  }
 />
 `;

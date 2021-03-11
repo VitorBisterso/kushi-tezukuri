@@ -33,7 +33,7 @@ describe('TypesOfProduct', () => {
         productsReducer: {
           allProducts: [
             {
-              id: 1,
+              id: '1',
               name: 'Máscara de bolinhas vermelha e detalhes em cinza',
               price: 6.5,
               typeOfProduct: 'mask',

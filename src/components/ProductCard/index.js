@@ -1,26 +1,19 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
 
+import ProductCardButton from '../ProductCardButton'
+
+import productActions from '../../redux/actions/products'
 import Utils from '../../utils'
 
-import cartIcon from '../../assets/img/cart.svg'
-import editIcon from '../../assets/img/edit.svg'
+import defaultImage from '../../assets/img/defaultImage.jpg'
 
 import './styles.css'
 
-const renderButton = isAdminPage => {
-  const icon = isAdminPage ? editIcon : cartIcon
-  const alt = isAdminPage ? 'editIcon' : 'cartIcon'
-
-  return (
-    <button type="button">
-      <img src={icon} alt={alt} />
-    </button>
-  )
-}
-
-const ProductCard = ({ title, price, image, isAdminPage }) => {
+const ProductCard = ({ product, isUserLogged }) => {
+  const dispatch = useDispatch()
   const [units, setUnits] = useState(1)
 
   const handleOnChangeUnit = e => {
@@ -31,11 +24,25 @@ const ProductCard = ({ title, price, image, isAdminPage }) => {
     }
   }
 
+  const handleClickFunction = () => {
+    if (isUserLogged) {
+      // eslint-disable-next-line no-console
+      console.log('edit product')
+    } else if (units >= 1) {
+      dispatch(productActions.addProductToCart(product, units))
+    }
+  }
+
+  /* TODO: Use firebase images */
+  const image = defaultImage
+  const { name, price } = product
   return (
     <motion.div className="productCard-container" layout>
       <img src={image} alt="product" />
       <div className="productCard-content">
-        <p className="productCard-title">{title}</p>
+        <p className="productCard-title" data-testid="productCard-title">
+          {name}
+        </p>
         <div className="productCard-bottom">
           <p>{Utils.convertPriceToBrSyntax(price)}</p>
           <div className="productCard-units">
@@ -48,18 +55,26 @@ const ProductCard = ({ title, price, image, isAdminPage }) => {
             />
             <p>un.</p>
           </div>
-          {renderButton(isAdminPage)}
+          <ProductCardButton
+            isEditButton={isUserLogged}
+            onClick={handleClickFunction}
+          />
         </div>
       </div>
     </motion.div>
   )
 }
 
+const productShape = {
+  id: PropTypes.string,
+  name: PropTypes.string,
+  price: PropTypes.number,
+}
+
 ProductCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  image: PropTypes.node.isRequired,
-  isAdminPage: PropTypes.bool.isRequired,
+  /* TODO: Use firebase images */
+  product: PropTypes.shape(productShape).isRequired,
+  isUserLogged: PropTypes.bool.isRequired,
 }
 
 export default ProductCard

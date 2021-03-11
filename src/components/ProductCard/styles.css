@@ -63,25 +63,3 @@
   width: 15px;
   height: 15px;
 }
-
-.productCard-bottom button {
-  cursor: pointer;
-  display: flex;
-  width: 25px;
-  height: 25px;
-  background-color: var(--COLOR-GOLD);
-  border-radius: var(--BORDER_RADIUS-SMALLEST);
-  border: none;
-  box-shadow: 2px 2px 2px var(--COLOR-SHADOW);
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s linear;
-}
-
-.productCard-bottom button:hover {
-  background-color: var(--COLOR-DARK_GOLD);
-}
-
-.productCard-bottom button > img {
-  width: 125%;
-}

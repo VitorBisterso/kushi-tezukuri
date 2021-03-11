@@ -24,7 +24,7 @@ describe('Products actions', () => {
     it('should create an action due to fetching all products successfully', () => {
       const allProducts = [
         {
-          id: 1,
+          id: '1',
           name: 'Máscara de bolinhas vermelha e detalhes em cinza',
           price: 6.5,
           typeOfProduct: 'mask',
@@ -46,7 +46,7 @@ describe('Products actions', () => {
   it('should create an action due to filtering products', () => {
     const filteredProducts = [
       {
-        id: 1,
+        id: '1',
         name: 'Máscara de bolinhas vermelha e detalhes em cinza',
         price: 6.5,
         typeOfProduct: 'mask',
@@ -64,23 +64,27 @@ describe('Products actions', () => {
   })
 
   it('should create an action due to adding a product to the cart', () => {
+    const amount = 2
     const product = {
-      id: 1,
+      id: '1',
       name: 'Máscara de bolinhas vermelha e detalhes em cinza',
       price: 6.5,
       typeOfProduct: 'mask',
       typeOfCut: 'F',
+      amount,
     }
 
     const expectedAction = {
       type: productsActionsTypes.ADD_PRODUCT_TO_CART,
-      payload: product,
+      payload: { product, amount },
     }
-    expect(productsActions.addProductToCart(product)).toEqual(expectedAction)
+    expect(productsActions.addProductToCart(product, amount)).toEqual(
+      expectedAction
+    )
   })
 
   it('should create an action due to removing a product from the cart', () => {
-    const productId = 1
+    const productId = '1'
 
     const expectedAction = {
       type: productsActionsTypes.REMOVE_PRODUCT_FROM_CART,

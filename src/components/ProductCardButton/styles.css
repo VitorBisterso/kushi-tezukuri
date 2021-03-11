@@ -1,0 +1,21 @@
+.productCardButton-container {
+  cursor: pointer;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: var(--COLOR-GOLD);
+  border-radius: var(--BORDER_RADIUS-SMALLEST);
+  border: none;
+  box-shadow: 2px 2px 2px var(--COLOR-SHADOW);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+.productCardButton-container:hover {
+  background-color: var(--COLOR-DARK_GOLD);
+}
+
+.productCardButton-container > img {
+  width: 125%;
+}
