@@ -62,4 +62,32 @@ describe('Products actions', () => {
       productsActions.setCurrentFilteredProducts(filteredProducts)
     ).toEqual(expectedAction)
   })
+
+  it('should create an action due to adding a product to the cart', () => {
+    const product = {
+      id: 1,
+      name: 'Máscara de bolinhas vermelha e detalhes em cinza',
+      price: 6.5,
+      typeOfProduct: 'mask',
+      typeOfCut: 'F',
+    }
+
+    const expectedAction = {
+      type: productsActionsTypes.ADD_PRODUCT_TO_CART,
+      payload: product,
+    }
+    expect(productsActions.addProductToCart(product)).toEqual(expectedAction)
+  })
+
+  it('should create an action due to removing a product from the cart', () => {
+    const productId = 1
+
+    const expectedAction = {
+      type: productsActionsTypes.REMOVE_PRODUCT_FROM_CART,
+      payload: productId,
+    }
+    expect(productsActions.removeProductFromCart(productId)).toEqual(
+      expectedAction
+    )
+  })
 })

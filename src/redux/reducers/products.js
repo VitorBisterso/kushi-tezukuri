@@ -5,6 +5,7 @@ export const INITIAL_STATE = {
   allProducts: [],
   filteredProducts: [],
   typesOfProduct: [],
+  cart: [],
   hasError: false,
 }
 
@@ -32,6 +33,16 @@ const productsReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         filteredProducts: action.payload,
+      }
+    case productsActionsTypes.ADD_PRODUCT_TO_CART:
+      return {
+        ...state,
+        cart: [...state.cart, action.payload],
+      }
+    case productsActionsTypes.REMOVE_PRODUCT_FROM_CART:
+      return {
+        ...state,
+        cart: [...state.cart.filter(product => product.id !== action.payload)],
       }
     default:
       return state

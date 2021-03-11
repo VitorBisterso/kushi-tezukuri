@@ -54,7 +54,7 @@ describe('Products reducer', () => {
     })
   })
 
-  it('should handle SET_CURRENT_FILTERED_PRODUCTS ', () => {
+  it('should handle SET_CURRENT_FILTERED_PRODUCTS', () => {
     const filteredProducts = [
       {
         id: 1,
@@ -73,6 +73,54 @@ describe('Products reducer', () => {
     expect(productsReducer(INITIAL_STATE, action)).toEqual({
       ...INITIAL_STATE,
       filteredProducts,
+    })
+  })
+
+  it('should handle ADD_PRODUCT_TO_CART', () => {
+    const newProduct = {
+      id: 1,
+      name: 'Máscara de bolinhas verde e detalhes em cinza',
+      price: 6,
+      typeOfProduct: 'mask',
+      typeOfCut: 'A',
+    }
+    const expectedCart = [newProduct]
+
+    const action = {
+      type: productsActionsTypes.ADD_PRODUCT_TO_CART,
+      payload: newProduct,
+    }
+
+    expect(productsReducer(INITIAL_STATE, action)).toEqual({
+      ...INITIAL_STATE,
+      cart: expectedCart,
+    })
+  })
+
+  it('should handle REMOVE_PRODUCT_FROM_CART', () => {
+    const productId = 1
+    const currentState = {
+      ...INITIAL_STATE,
+      cart: [
+        {
+          id: productId,
+          name: 'Máscara de bolinhas verde e detalhes em cinza',
+          price: 6,
+          typeOfProduct: 'mask',
+          typeOfCut: 'A',
+        },
+      ],
+    }
+
+    const removeAction = {
+      type: productsActionsTypes.REMOVE_PRODUCT_FROM_CART,
+      payload: productId,
+    }
+    const expectedCart = []
+
+    expect(productsReducer(currentState, removeAction)).toEqual({
+      ...currentState,
+      cart: expectedCart,
     })
   })
 })

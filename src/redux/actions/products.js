@@ -23,6 +23,14 @@ const productsActions = {
     type: productsActionsTypes.SET_CURRENT_FILTERED_PRODUCTS,
     payload: filteredProducts,
   }),
+  addProductToCart: product => ({
+    type: productsActionsTypes.ADD_PRODUCT_TO_CART,
+    payload: product,
+  }),
+  removeProductFromCart: productId => ({
+    type: productsActionsTypes.REMOVE_PRODUCT_FROM_CART,
+    payload: productId,
+  }),
 }
 
 export default productsActions
