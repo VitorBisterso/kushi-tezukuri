@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyCart should render correctly 1`] = `
+<div
+  className="emptyCart-container"
+>
+  <img
+    alt="empty-cart"
+    src=""
+  />
+  <p>
+    Seu carrinho está vazio...
+  </p>
+</div>
+`;

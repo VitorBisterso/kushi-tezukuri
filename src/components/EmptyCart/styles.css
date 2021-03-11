@@ -1,0 +1,31 @@
+.emptyCart-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyCart-container > img {
+  width: 35vw;
+}
+
+.emptyCart-container p {
+  font-family: 'Mali-Bold';
+  font-size: var(--TEXT-BIGGEST);
+  color: var(--COLOR-GOLD);
+}
+
+@media (max-width: 767px) {
+  .emptyCart-container {
+    margin-top: 5vw;
+  }
+
+  .emptyCart-container > img {
+    width: 50vw;
+  }
+
+  .emptyCart-container p {
+    font-size: var(--TEXT-MEDIUM);
+  }
+}
