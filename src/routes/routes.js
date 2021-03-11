@@ -2,6 +2,7 @@ import Home from '../screens/Home'
 import About from '../screens/About'
 import OurStore from '../screens/OurStore'
 import Products from '../screens/Products'
+import Cart from '../screens/Cart'
 
 const allRoutes = [
   {
@@ -26,6 +27,12 @@ const allRoutes = [
     name: 'products',
     Component: Products,
     path: '/products',
+    isExact: false,
+  },
+  {
+    name: 'cart',
+    Component: Cart,
+    path: '/cart',
     isExact: false,
   },
 ]

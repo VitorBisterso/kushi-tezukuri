@@ -63,3 +63,8 @@
   width: 15px;
   height: 15px;
 }
+
+.productCard-toaster {
+  font-family: 'Mali-SemiBold';
+  color: var(--COLOR-LIGHT_BLACK);
+}

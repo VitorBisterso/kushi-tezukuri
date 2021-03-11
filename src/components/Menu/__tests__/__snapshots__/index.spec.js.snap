@@ -83,11 +83,11 @@ exports[`Menu should render correctly 1`] = `
         </Link>
       </li>
       <li>
-        <a
-          href="#"
+        <Link
+          to="/cart"
         >
           Carrinho
-        </a>
+        </Link>
       </li>
     </ul>
   </nav>

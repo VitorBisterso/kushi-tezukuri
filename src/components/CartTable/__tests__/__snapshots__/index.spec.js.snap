@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartTable should render correctly 1`] = `
+<table
+  className="cartTable-container"
+>
+  <tbody>
+    <tr
+      key="1"
+    >
+      <td>
+        <p>
+          Máscara de bolinhas vermelha e detalhes em cinza
+        </p>
+      </td>
+      <td>
+        <p>
+          undefined un. x R$ 6,50
+        </p>
+      </td>
+      <td>
+        <p>
+          R$ NaN,00
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td
+        colSpan={2}
+      >
+        <p>
+          Total
+        </p>
+      </td>
+      <td
+        colSpan={2}
+      >
+        <p>
+          R$ NaN,00
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

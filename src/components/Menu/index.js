@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-
-/* TODO: Remover restrições do eslint acima */
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -60,8 +57,7 @@ const Menu = () => (
           <Link to={getPathToRoute('ourStore')}>Nossa loja</Link>
         </li>
         <li>
-          {/* TODO: Adicionar rota para a página do carrinho */}
-          <a href="#">Carrinho</a>
+          <Link to={getPathToRoute('cart')}>Carrinho</Link>
         </li>
       </ul>
     </nav>

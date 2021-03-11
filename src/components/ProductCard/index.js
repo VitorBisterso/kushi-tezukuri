@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
+import toast, { Toaster } from 'react-hot-toast'
 
 import ProductCardButton from '../ProductCardButton'
 
@@ -11,6 +12,10 @@ import Utils from '../../utils'
 import defaultImage from '../../assets/img/defaultImage.jpg'
 
 import './styles.css'
+
+const toastOptions = {
+  className: 'productCard-toaster',
+}
 
 const ProductCard = ({ product, isUserLogged }) => {
   const dispatch = useDispatch()
@@ -28,8 +33,14 @@ const ProductCard = ({ product, isUserLogged }) => {
     if (isUserLogged) {
       // eslint-disable-next-line no-console
       console.log('edit product')
-    } else if (units >= 1) {
-      dispatch(productActions.addProductToCart(product, units))
+    } else {
+      const unitsNumber = parseInt(units, 10)
+      if (unitsNumber >= 1) {
+        dispatch(productActions.addProductToCart(product, unitsNumber))
+        toast.success(`${units} "${product.name}" adicionado(s) ao carrinho!`)
+      } else {
+        toast.error('Acho que você não colocou uma quantidade válida...')
+      }
     }
   }
 
@@ -61,6 +72,7 @@ const ProductCard = ({ product, isUserLogged }) => {
           />
         </div>
       </div>
+      <Toaster toastOptions={toastOptions} />
     </motion.div>
   )
 }
